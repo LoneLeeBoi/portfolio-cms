@@ -8,7 +8,7 @@ type Props = {
 export default function ProjectCard({ project }: Props) {
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-line bg-surface transition hover:-translate-y-1 hover:border-emerald-500/50">
-      <div className="flex h-40 items-center justify-center bg-gradient-to-br from-emerald-500/20 to-chip text-4xl font-bold text-accent/60">
+      <div className="flex h-40 items-center justify-center bg-linear-to-br from-emerald-500/20 to-chip text-4xl font-bold text-accent/60">
         {project.title.charAt(0)}
       </div>
 
