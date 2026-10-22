@@ -1,0 +1,49 @@
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mindex 5ef6a52..2e74861 100644[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -39,3 +39,12 @@[m [myarn-error.log*[m
+ # typescript[m
+ *.tsbuildinfo[m
+ next-env.d.ts[m
+[32m+[m
+[32m+[m[32m/app/generated/prisma[m
+[32m+[m
+[32m+[m[32m/app/generated[m
+[32m+[m[32m# AI assistant config[m
+[32m+[m[32m.agents/[m
+[32m+[m[32m.claude/[m
+[32m+[m[32m.windsurf/[m
+[32m+[m[32mskills-lock.json[m
+\ No newline at end of file[m
+[1mdiff --git a/package.json b/package.json[m
+[1mindex 0805821..e9fb720 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -6,9 +6,13 @@[m
+     "dev": "next dev",[m
+     "build": "next build",[m
+     "start": "next start",[m
+[31m-    "lint": "eslint"[m
+[32m+[m[32m    "lint": "eslint",[m
+[32m+[m[32m    "postinstall": "prisma generate"[m
+   },[m
+   "dependencies": {[m
+[32m+[m[32m    "@prisma/adapter-pg": "^7.10.1",[m
+[32m+[m[32m    "@prisma/client": "^7.10.1",[m
+[32m+[m[32m    "dotenv": "^18.0.8",[m
+     "next": "16.4.2",[m
+     "react": "19.3.0",[m
+     "react-dom": "19.3.0"[m
+[36m@@ -20,7 +24,9 @@[m
+     "@types/react-dom": "^19",[m
+     "eslint": "^9",[m
+     "eslint-config-next": "16.4.2",[m
+[32m+[m[32m    "prisma": "^7.10.1",[m
+     "tailwindcss": "^4",[m
+[32m+[m[32m    "tsx": "^4.23.15",[m
+     "typescript": "^5"[m
+   }[m
+[31m-}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
