@@ -1,11 +1,11 @@
 export default function Hero() {
     return (
         <section className="mx-auto flex min-h-[80vh] max-w-3xl flex-col justify-center px-6">
-            <p className="text-sm font-medium uppercase tracking-widest text-emerald-400">
+            <p className="text-sm font-medium uppercase tracking-widest text-accent">
                 Hello, I&apos;m
             </p>
             <h1 className="mt-2 text-5xl font-bold sm:text-7xl">Lee Casquejo</h1>
-            <p className="mt-4 text-lg text-slate-400">I build things for the web.</p>
+            <p className="mt-4 text-lg text-muted">I build things for the web.</p>
             <div className="mt-8 flex flex-wrap gap-4">
                 <a
                     href="#projects"
@@ -15,7 +15,7 @@ export default function Hero() {
                 </a>
                 <a
                     href="#contact"
-                    className="rounded-full border border-slate-700 px-6 py-3 font-medium transition hover:border-slate-500"
+                    className="rounded-full border border-line-strong px-6 py-3 font-medium transition hover:border-muted"
                 >
                     Contact me
                 </a>
