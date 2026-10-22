@@ -1,8 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Footer from "@/components/Footer";
+import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -10,9 +11,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <section id="projects" className="mx-auto max-w-3xl px-6 py-24">
-        <p className="text-subtle">Projects coming in Step 5...</p>
-      </section>
+      <Projects />
       <Contact />
       <Footer />
     </main>
